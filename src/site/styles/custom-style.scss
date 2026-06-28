@@ -4,33 +4,40 @@ body {
       IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
    ***/
 /* Navbar flex layout */
+/* Make navbar-inner a flex container */
 .navbar-inner {
     display: flex !important;
-    justify-content: space-between !important;
     align-items: center !important;
-    padding: 0 2rem !important;
+    width: 100% !important;
 }
 
-/* Navigation links in navbar */
+/* Push nav links to the far right */
 .custom-nav-inline {
     display: flex !important;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center;
     margin-left: auto !important;
+    padding-right: 1rem;
 }
 
 .custom-nav-inline a {
     text-decoration: none;
     color: var(--text-normal);
     font-weight: 500;
-    transition: color 0.2s ease;
-    font-size: 1rem;
+    font-size: 0.95rem;
     white-space: nowrap;
+    transition: color 0.2s ease;
 }
 
 .custom-nav-inline a:hover {
-    color: var(--link-color);
-    text-decoration: underline;
+    color: var(--text-accent);
+}
+
+/* Mobile: hide nav links, show hamburger instead */
+@media (max-width: 768px) {
+    .custom-nav-inline {
+        display: none !important;
+    }
 }
 
 header .custom-nav {
