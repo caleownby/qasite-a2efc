@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"dg-note-properties":{"page_type":null,"tags":null}}
 ---
 
+# QA Site
 # Hey there, I'm Cale Ownby (like the lettuce)
 #### I’ve been **building autonomous, empowered, and effective teams** for over a decade. My success comes from staying curious and curating a culture of curiosity with my teams and leaders. Curiosity opens new communication patterns, new solutions, and allows us to leverage the wisdom of the team. 
 
