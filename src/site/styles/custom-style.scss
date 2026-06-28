@@ -3,7 +3,8 @@ body {
       ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
       IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
    ***/
-/* Navbar flex layout */
+}
+
 /* Make navbar-inner a flex container */
 .navbar-inner {
     display: flex !important;
@@ -33,17 +34,11 @@ body {
     color: var(--text-accent);
 }
 
-/* Mobile: hide nav links, show hamburger instead */
-@media (max-width: 768px) {
-    .custom-nav-inline {
-        display: none !important;
-    }
-}
-
 header .custom-nav {
     display: none !important;
 }
 
+/* Mobile */
 @media (max-width: 768px) {
     .navbar-inner {
         flex-direction: column !important;
@@ -51,12 +46,6 @@ header .custom-nav {
     }
 
     .custom-nav-inline {
-        margin-left: 0 !important;
-        margin-top: 1rem;
-        width: 100%;
-        flex-direction: column;
-        gap: 0.5rem;
-        align-items: flex-start;
+        display: none !important;
     }
-}
 }
