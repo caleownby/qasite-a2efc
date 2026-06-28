@@ -1,10 +1,8 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Find the navbar-inner div
     const navbarInner = document.querySelector('.navbar-inner');
-    
+
     if (navbarInner) {
-        // Create navigation container
         const nav = document.createElement('nav');
         nav.className = 'custom-nav-inline';
         nav.innerHTML = `
@@ -15,8 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
             <a href="/executive-coaching/">Coaching</a>
             <a href="/lets-connect/">Let's Connect</a>
         `;
-        
-        // Append to navbar-inner
         navbarInner.appendChild(nav);
     }
 });
